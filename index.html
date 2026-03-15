@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3TX | فخامة الحلول الرقمية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root { --neon-pink: #ff007f; --dark: #050505; --iphone-bg: #0d0d0d; }
+        body { margin: 0; font-family: 'Cairo', sans-serif; background: var(--dark); color: white; overflow-x: hidden; }
+
+        /* شريط الأخبار المتحرك */
+        .marquee { background: var(--neon-pink); color: white; padding: 12px 0; font-weight: 900; overflow: hidden; white-space: nowrap; box-shadow: 0 0 25px var(--neon-pink); position: sticky; top: 0; z-index: 1000; }
+        .marquee div { display: inline-block; animation: scroll 25s linear infinite; }
+        @keyframes scroll { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+
+        /* الهيدر */
+        .hero { padding: 60px 20px; text-align: center; }
+        .logo-3tx { font-size: 75px; font-weight: 900; color: #fff; text-shadow: 0 0 10px #fff, 0 0 30px var(--neon-pink); margin: 0; }
+        .hero p { color: #666; font-size: 14px; letter-spacing: 4px; margin-top: 5px; }
+
+        /* قسم العرض الرئيسي */
+        .main-display { display: flex; flex-direction: column; align-items: center; padding: 20px; }
+        .promo-title { font-size: 26px; font-weight: 900; color: var(--neon-pink); margin-bottom: 30px; text-align: center; }
+
+        /* هيكل الآيفون */
+        .iphone-frame {
+            width: 290px; height: 580px; background: #1a1a1a; border: 10px solid #282828;
+            border-radius: 45px; position: relative; box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+            overflow: hidden; outline: 2px solid #333;
+        }
+        .iphone-frame::after { content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 90px; height: 22px; background: #282828; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px; z-index: 100; }
+
+        /* المنيو داخل الموبايل */
+        .screen { height: 100%; width: 100%; overflow: hidden; background: var(--iphone-bg); }
+        .scroll-content { animation: autoScroll 18s infinite linear; }
+        @keyframes autoScroll { 0% { transform: translateY(0); } 100% { transform: translateY(-75%); } }
+
+        .menu-top { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=400'); background-size: cover; padding: 45px 15px 25px; text-align: center; border-bottom: 2px solid var(--neon-pink); }
+        .menu-top h3 { color: white; margin: 0; font-size: 22px; font-weight: 900; }
+        
+        .item { display: flex; align-items: center; padding: 15px 12px; border-bottom: 1px solid #1a1a1a; }
+        .item img { width: 65px; height: 65px; border-radius: 10px; object-fit: cover; border: 1px solid #222; }
+        .item-info { flex: 1; padding-right: 12px; text-align: right; }
+        .item-info h4 { margin: 0; font-size: 15px; color: #fff; }
+        .item-info p { margin: 4px 0; font-size: 11px; color: #555; }
+        .item-price { color: var(--neon-pink); font-weight: 900; font-size: 14px; }
+
+        /* أزرار التواصل بـ ألوان انستغرام */
+        .insta-link {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            color: white; padding: 18px 50px; border-radius: 50px; text-decoration: none;
+            font-weight: 900; font-size: 18px; display: inline-flex; align-items: center; gap: 10px;
+            margin-top: 40px; box-shadow: 0 10px 30px rgba(188, 24, 136, 0.4); transition: 0.3s;
+        }
+        .insta-link:hover { transform: scale(1.05); }
+
+        footer { text-align: center; padding: 40px; color: #1a1a1a; font-size: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="marquee">
+        <div> ⚡ اطلب موقع المنيو الخاص بل مطعم مالتك لسهوله الطلب للزبائن ⚡ - ⚡ تميز بخدمة رقمية سريعة مع 3TX ⚡ - ⚡ اطلب الآن واحصل على تصميمك الخاص ⚡ </div>
+    </div>
+
+    <header class="hero">
+        <h1 class="logo-3tx">3TX</h1>
+        <p>PREMIUM SOLUTIONS</p>
+    </header>
+
+    <div class="main-display">
+        <div class="promo-title">معاينة حية للمنيو الذكي</div>
+        
+        <div class="iphone-frame">
+            <div class="screen">
+                <div class="scroll-content">
+                    <div class="menu-top">
+                        <h3>مطعم الديوان الملكي</h3>
+                        <p style="color:var(--neon-pink); font-size:12px; margin:0;">أفخم المشويات العراقية</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=200">
+                        <div class="item-info">
+                            <h4>كباب عراقي خاص</h4>
+                            <p>لحم غنم مشوي على الفحم</p>
+                            <span class="item-price">14,500 د.ع</span>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=200">
+                        <div class="item-info">
+                            <h4>ستيك ريب آي</h4>
+                            <p>لحم فاخر مع صوص الفطر</p>
+                            <span class="item-price">22,000 د.ع</span>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=200">
+                        <div class="item-info">
+                            <h4>بيتزا رويال</h4>
+                            <p>جبن موزاريلا إيطالي أصلي</p>
+                            <span class="item-price">12,500 د.ع</span>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://images.unsplash.com/photo-1562967914-608f82629710?q=80&w=200">
+                        <div class="item-info">
+                            <h4>وجبة كرسبي VIP</h4>
+                            <p>قطع دجاج مقرمشة مع البطاطا</p>
+                            <span class="item-price">10,500 د.ع</span>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=200">
+                        <div class="item-info">
+                            <h4>سلطة سيزر</h4>
+                            <p>خضروات طازجة مع دجاج</p>
+                            <span class="item-price">6,000 د.ع</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="https://www.instagram.com/6.2nr?igsh=NDh6dm1hcnptaDl5" class="insta-link">
+            <i class="fab fa-instagram"></i> ابدأ مشروعك الآن
+        </a>
+    </div>
+
+    <footer> © 2026 3TX Studio </footer>
+
+</body>
+</html>
