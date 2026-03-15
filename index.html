@@ -19,8 +19,9 @@
         .marquee div { display: inline-block; animation: scroll 20s linear infinite; }
         @keyframes scroll { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
 
-        .hero { padding: 30px 20px; text-align: center; }
+        .hero { padding: 30px 20px 10px; text-align: center; }
         .logo-3tx { font-size: 60px; font-weight: 900; text-shadow: 0 0 20px var(--neon-pink); margin: 0; }
+        .contact-instruction { font-size: 18px; color: var(--neon-pink); margin-top: 5px; font-weight: bold; text-shadow: 0 0 5px var(--neon-pink); }
 
         /* إطار الفيديو الاحترافي */
         .video-container {
@@ -47,7 +48,8 @@
         .item { display: flex; align-items: center; padding: 12px; border-bottom: 1px solid #222; background: rgba(0,0,0,0.4); }
         .item img { width: 65px; height: 65px; border-radius: 10px; object-fit: cover; }
         .item-info { flex: 1; padding-right: 12px; text-align: right; }
-        .item-price { color: var(--neon-pink); font-weight: bold; }
+        .item-info h4 { margin: 0; font-size: 15px; }
+        .item-price { color: var(--neon-pink); font-weight: bold; font-size: 13px; }
 
         /* نص نيون ملون */
         .neon-demo-text {
@@ -60,7 +62,8 @@
             100% { text-shadow: 0 0 10px #ff007f; color: #ff007f; }
         }
 
-        .insta-link { background: linear-gradient(45deg, #f09433, #dc2743, #bc1888); color: white; padding: 15px 45px; border-radius: 50px; text-decoration: none; font-weight: 900; margin-top: 20px; display: inline-block; }
+        .insta-link { background: linear-gradient(45deg, #f09433, #dc2743, #bc1888); color: white; padding: 15px 45px; border-radius: 50px; text-decoration: none; font-weight: 900; margin-top: 20px; display: inline-block; box-shadow: 0 10px 20px rgba(188, 24, 136, 0.3); }
+        footer { text-align: center; padding: 40px; color: #444; font-size: 11px; }
     </style>
 </head>
 <body>
@@ -71,6 +74,7 @@
 
     <header class="hero">
         <h1 class="logo-3tx">3TX</h1>
+        <p class="contact-instruction">للتواصل انستكرام جوه</p>
     </header>
 
     <div class="video-container">
@@ -103,7 +107,7 @@
         </a>
     </div>
 
-    <footer style="text-align: center; padding: 40px; color: #444; font-size: 11px;"> © 2026 3TX Studio </footer>
+    <footer> © 2026 3TX Studio - All Rights Reserved </footer>
 
 </body>
 </html>
